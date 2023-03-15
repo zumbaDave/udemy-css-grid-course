@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            /* following is with flex-direction: row */
+            display: flex;  /* items will not wrap, therefore potentially creating a horizontal bar*/
+            flex-wrap: nowrap;  /* default */
+            flex-wrap: wrap;  /* will wrap as screen size gets smaller */
+            flex-wrap: wrap-reverse;  /* will wrap but first items will go to second row */
+        }
+    </style>
+    <title>Grid Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+    </div>
+</body>
+</html>

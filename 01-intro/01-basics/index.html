@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            min-height: 100vh;
+            display: grid;
+            /* grid-template-columns: 200px 300px 200px; */  /* implicit grid */
+            /* units that can be used */
+            /* px rem em % auto fr */
+            /* grid-template-columns: 200px 7rem 10em 5%; */
+            /* auto makes last column responsive, but can be used anywhere */
+            
+            /* grid-template-columns: 200px 7rem auto; */
+            /* following will make the second column responsive */
+            grid-template-columns: 200px auto 10rem;
+
+            /* rows */
+            /* following is same as saying */
+            /* grid-template-rows: 300px 20rem auto; */
+            /* grid-template-rows: 300px 5rem; */  /* any extra rows will be automatically set to auto */
+            grid-template-rows: auto 5rem; /* third row is still auto by default */
+        }
+    </style>
+    <title>Grid Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cell cell-1">cell 1</div>
+        <div class="cell cell-2">cell 2</div>
+        <div class="cell cell-3">cell 3</div>
+        <div class="cell cell-4">cell 4</div>
+        <div class="cell cell-5">cell 5</div>
+        <div class="cell">cell 6</div>
+        <div class="cell">cell 7</div>
+    </div>
+</body>
+</html>
